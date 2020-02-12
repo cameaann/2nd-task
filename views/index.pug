@@ -1,6 +1,17 @@
 doctype html
-html(lang='en')
+html(lang='ru')
  head
-   title Hello, World!
+   title Номера!
+   link(rel="stylesheet" href="css/style.css")
+   link(href="https://fonts.googleapis.com/css?family=Montserrat:400,600,600i,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet")
  body
-   h1 Hello, World!
+  div.container
+      h1.heading-primary Номера, которые мы для вас подобрали
+      section.rooms
+         each room in rooms
+            div.room
+              img.room__img(src= room.src)
+              div.number № #{room.number}
+              div.price Цена #{room.price}
+              div.reviews Отзывы #{room.reviews}
+

@@ -1,0 +1,7 @@
+.container{
+    margin:0 auto;
+    padding:3rem;
+    display:grid;
+    grid-template-columns: repeat(8, 20rem);
+    grid-template-rows: minmax(min-content, max-content);
+}
